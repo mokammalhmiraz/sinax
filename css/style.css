@@ -1,0 +1,729 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+
+.bg_cover {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+     !important
+}
+
+.custom_container {
+    padding: 0 60px;
+}
+
+/* section head style */
+
+.section_head {}
+
+.section_head h5 {
+    color: #878787;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section_head h2 {
+    color: #222222;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.section_head p {
+    color: #666666;
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+/* all btns style */
+
+.theme_btn:hover,
+.theme_btn {
+    padding: 20px 55px;
+    background: #f26957;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* End of common CSS */
+
+/*=========================
+
+    02.HEADER AREA CSS
+
+=========================*/
+
+.main_menu {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#navbarSupportedContent {
+    overflow: hidden;
+}
+
+.main_menu .navbar-nav {
+    transform: translateX(100%);
+    transition: all .5s linear;
+}
+
+.main_menu .navbar-nav.nav_active {
+    transform: translateX(0);
+}
+
+.main_menu .navbar-nav .nav-item {}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding: 50px 15px;
+    transition: all .5s linear;
+}
+
+.main_menu .navbar-nav .nav-item.active .nav-link,
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    color: #f26957;
+}
+
+.toggle_bar button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*=========================
+
+    03.BANNER AREA CSS
+
+=========================*/
+
+.banner_area {}
+
+.single_slide {}
+
+.banner_overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.slider_content {
+    padding-top: 345px;
+    padding-bottom: 270px;
+}
+
+.slider_content h4 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.slider_content h1 {
+    font-size: 92px;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.left_btn,
+.right_btn {
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    border: 0;
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    transform: translateY(-50%);
+    line-height: 0;
+
+}
+
+.left_btn {
+    left: 50px;
+    border-left: 3px solid #fff;
+    padding-left: 5px;
+}
+
+.right_btn {
+    right: 50px;
+    border-right: 3px solid #fff;
+    padding-right: 5px
+}
+
+/*=========================
+
+    04.SKILL AREA CSS
+
+=========================*/
+.skill_area {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.skill_content {}
+
+.skill_content img {
+    width: 100%;
+}
+
+.skill_content h4 {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.skill_content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.skill_content a {
+    color: #444444;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.skill_content a i {
+    padding-left: 5px;
+}
+
+
+
+/*=========================
+
+    05.SERVICE AREA CSS
+
+=========================*/
+
+
+.service_area {
+    background: #f6f6f6;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.service_items {}
+
+.service_content {
+    background: #fff;
+    padding: 0 40px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    transition: all .5s linear;
+}
+
+.service_content:hover {
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+}
+
+.service_content img {
+    padding-bottom: 25px;
+}
+
+.service_content h4 {
+    padding-bottom: 30px;
+    color: black;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.service_content p {
+    color: #666666;
+    font-size: 14px;
+}
+
+/*=========================
+
+    06.WORK AREA CSS
+
+=========================*/
+
+.work_area {
+    padding-top: 126px;
+    padding-bottom: 130px;
+}
+
+.work_area .section_head h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.section_head .gal_btns {}
+
+.section_head .gal_btns button {
+    background: transparent;
+    border: 0;
+    color: #888888;
+    font-size: 14px;
+    margin-left: 25px;
+    transition: all .5s linear;
+}
+
+.section_head .gal_btns button.active_btn,
+.section_head .gal_btns button:hover {
+    color: #f26957;
+}
+
+.single_work {
+    position: relative;
+}
+
+.single_work .work_img {}
+
+.single_work .work_overlay.last_overlay,
+.single_work .work_img.last_img img {
+    width: 93%;
+}
+
+.single_work .work_overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+}
+
+.single_work:hover .work_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single_work .work_overlay .overlay_icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.single_work .work_overlay .overlay_icon i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.single_work .work_overlay .overlay_txt {
+    bottom: 25px;
+    position: absolute;
+    left: 30px;
+}
+
+.single_work .work_overlay .overlay_txt h3 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.single_work .work_overlay .overlay_txt h5 {
+    color: #cecece;
+    font-size: 11px;
+}
+
+/*=========================
+
+    07.COUNTER AREA CSS
+
+=========================*/
+
+.counter_area {
+    background: #333333;
+}
+
+.counter_txt h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+}
+
+.counter_txt h2::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    bottom: -5px;
+    left: 44%;
+    background: #f26957;
+}
+
+.counter_txt p {
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+/*=========================
+
+    08.STUFF AREA CSS
+
+=========================*/
+
+.stuff_area {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.stuff_team {}
+
+.stuff_team .single_stuff {
+    overflow: hidden
+}
+
+.stuff_team .single_stuff .stuff_img {
+    position: relative;
+}
+
+.stuff_team .single_stuff .stuff_overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+    transform: translateY(-100%)
+}
+
+.stuff_team .single_stuff .stuff_img:hover .stuff_overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%)
+}
+
+.stuff_team .single_stuff .stuff_overlay .overlay_txt {
+	position: absolute;
+	text-align: center;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.stuff_team .single_stuff .stuff_overlay .overlay_txt p {
+    color: #ebebeb;
+    font-size: 14px;
+    padding: 0 35px;
+}
+
+.stuff_team .single_stuff .stuff_overlay .overlay_txt .overlay_icon {}
+
+.stuff_team .single_stuff .stuff_overlay .overlay_txt .overlay_icon i {
+    background: #fff;
+    color: #010101;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin: 0 3px;
+    transition: all .5s linear;
+}
+
+.stuff_team .single_stuff .stuff_overlay .overlay_txt .overlay_icon i:hover {
+    background: #f26957;
+    color: #fefefe;
+}
+
+.stuff_team .single_stuff .stuff_txt {
+    padding-top: 28px;
+}
+
+.stuff_team .single_stuff .stuff_txt h3 {
+    color: #222222;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.stuff_team .single_stuff .stuff_txt h5 {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*=========================
+
+    09.DESIGN AREA CSS
+
+=========================*/
+
+.design_area {
+    padding-bottom: 120px;
+}
+
+.design_area .design_bg {}
+
+.design_area .design_txt {
+    height: 695px;
+    padding-left: 95px;
+    background: #f6f6f6;
+}
+
+.design_area .design_txt h2 {
+    padding-right: 45%;
+    padding-top: 15px;
+}
+
+.design_area .design_txt p {
+    padding: 0;
+    padding-right: 170px;
+}
+
+.design_txt a{
+    margin-top: 25px;
+}
+
+/*=========================
+
+    10.BRAND AREA CSS
+
+=========================*/
+
+.brand_area {
+    padding-bottom: 120px;
+}
+
+/*=========================
+
+    11.NEWS AREA CSS
+
+=========================*/
+
+.news_area {
+    background: #f6f6f6;
+    padding: 130px 0;
+}
+
+.news_slider {}
+
+.single_news {}
+
+.single_news .news_txt {
+    padding: 25px 20px;
+    background: #fff;
+}
+
+.single_news .news_txt h3 {
+    font-size: 18px;
+    color: #222222;
+}
+
+.single_news .news_txt .news_info {
+    font-size: 13px;
+    color: #666666;
+}
+
+.single_news .news_txt .news_info .name {}
+
+.single_news .news_txt .news_info .name {}
+
+.single_news .news_txt .news_info .date {}
+
+.single_news .news_txt .news_info .cmnt {}
+
+.single_news .news_txt .news_info a {
+    color: #f26957;
+}
+
+.single_news .news_txt p {
+    font-size: 14px;
+    color: #666666;
+    position: relative;
+    padding-top: 20px;
+}
+
+.single_news .news_txt p::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: -20px;
+    left: 0;
+    background: #dddddd;
+}
+
+.single_news a {
+    color: #222222;
+    font-size: 13px;
+}
+
+/*=========================
+
+    12.FOOTER AREA CSS
+
+=========================*/
+
+.footer_area {
+    background: #222222;
+}
+
+.footer_area .logo {
+    padding-bottom: 30px;
+}
+
+.footer_area .logo_txt {}
+
+.footer_area .logo_txt p {
+    font-size: 14px;
+    color: #bdbdbd;
+    padding-right: 80px;
+}
+
+.footer_area .logo_txt .social_link {}
+
+.footer_area .logo_txt .social_link i {
+    background: #353333;
+    color: #e3e3e3;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding-left: 25.5%;
+    transition: all .5s linear;
+}
+
+.footer_area .logo_txt .social_link i:hover {
+    background: #f26957;
+    color: #fff;
+}
+
+.post_area {}
+
+.post_area h3 {
+    color: #fff;
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+
+.post_area p {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin-bottom: 0px;
+}
+
+.post_area span {
+    color: #6d6d6d;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.subscribe_area {}
+
+.subscribe_area h3 {
+    color: #fff;
+    font-size: 19px;
+    padding-bottom: 20px;
+}
+
+.subscribe_area p {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.subscribe_area .input {}
+
+.subscribe_area .input .input_text {}
+
+.subscribe_area .input .input_text input {
+    width: 210px;
+    height: 45px;
+    background: #3f3f3f;
+    border: 0;
+    color: #b6b6b6;
+    padding-left: 15px;
+    font-size: 12px;
+    border-right: 1px solid #575757;
+}
+
+.subscribe_area .input .input_icon {
+    width: 59px;
+    height: 45px;
+    background: #3f3f3f;
+    padding: 9px 15px;
+}
+
+/*=========================
+
+   13.COPYRIGHT AREA CSS
+
+=========================*/
+
+.copy_right {
+    background: #2e2e2e;
+}
+
+.footer_end {}
+
+.copy_right_txt {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.footer_bar {}
+
+.footer_bar ul {}
+
+.footer_bar ul li {
+    display: inline-block;
+    padding-left: 16px;
+}
+
+.footer_bar ul li a {
+    color: #bdbdbd;
+    font-size: 14px;
+}

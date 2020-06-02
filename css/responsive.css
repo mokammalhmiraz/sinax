@@ -1,0 +1,152 @@
+/*/ Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .design_area .design_txt {
+        height: 694px;
+    }
+
+    .design_area .design_txt h2 {
+        padding-right: 20%;
+        padding-top: 25px;
+    }
+
+    .design_txt a {
+        margin-top: 25px;
+    }
+}
+
+
+/*/ Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .design_area .design_txt {
+        height: 455px;
+    }
+}
+
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .main_menu {
+        padding: 25px 60px;
+        overflow-y: hidden;
+    }
+
+    .toggle_bar {
+        display: none;
+    }
+
+    #navbarSupportedContent {
+        overflow: visible;
+    }
+
+    .main_menu .navbar-nav {
+        transform: translateX(0);
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 20px;
+    }
+
+    .navbar-toggler {
+        color: #f1f1f1 !important;
+        font-size: 25px;
+        border: 0;
+    }
+
+    .slider_content {
+        padding-top: 165px;
+        padding-bottom: 90px;
+    }
+
+    .left_btn,
+    .right_btn {
+        top: 40%;
+    }
+
+    .single_work .work_overlay.last_overlay,
+    .single_work .work_img.last_img img {
+        width: 100%;
+    }
+
+    .custom_container {
+        padding: 0 35px;
+    }
+
+    .design_area .design_txt {
+        height: 485px;
+    }
+
+    .footer_area .logo_txt {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main_menu {
+        padding: 25px 60px;
+        overflow-y: hidden;
+    }
+
+    .toggle_bar {
+        display: none;
+    }
+
+    #navbarSupportedContent {
+        overflow: visible;
+    }
+
+    .main_menu .navbar-nav {
+        transform: translateX(0);
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        padding: 20px;
+    }
+
+    .navbar-toggler {
+        color: #f1f1f1 !important;
+        font-size: 25px;
+        border: 0;
+    }
+
+    .slider_content {
+        padding-top: 165px;
+        padding-bottom: 90px;
+    }
+
+    .slider_content h1 {
+        font-size: 68px;
+        color: #fff;
+        line-height: 1.1;
+    }
+
+    .left_btn,
+    .right_btn {
+        top: 35%;
+    }
+
+    .single_work .work_overlay.last_overlay,
+    .single_work .work_img.last_img img {
+        width: 100%;
+    }
+
+    .custom_container {
+        padding: 0 35px;
+    }
+
+    .design_area .design_txt {
+        height: 555px;
+    }
+
+    .footer_area .logo_txt {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
